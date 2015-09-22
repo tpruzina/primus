@@ -5,6 +5,7 @@ DEF_GLX_PROTO(void,     glBindBuffer, (GLenum target, GLuint buffer))
 DEF_GLX_PROTO(void,     glBufferData, (GLenum target, GLsizeiptr size, const GLvoid *data, GLenum usage))
 DEF_GLX_PROTO(void,     glBufferSubData, (GLenum target, GLintptr offset, GLsizeiptr size, const GLvoid *data))
 DEF_GLX_PROTO(GLvoid*,  glMapBuffer,  (GLenum target, GLenum access))
+DEF_GLX_PROTO(GLvoid*,  glMapBufferRange,  (GLenum target, GLintptr offset, GLsizeiptr length, GLenum access))
 DEF_GLX_PROTO(GLboolean,glUnmapBuffer,(GLenum target))
 
 DEF_GLX_PROTO(GLsync,   glFenceSync, (GLenum condition, GLbitfield flags))

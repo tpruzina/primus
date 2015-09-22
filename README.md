@@ -1,6 +1,15 @@
+EXPERIMENTAL BRANCH WARNING
+---------------------------
+This experimental branch of original project contains microoptimizations
+that came out of assertions that may not be true for your workload.
+Among other things, profiling & warnings, PRIMUS_SYNC, texture readback option
+and others we NUKED in favor of code that uses minimal branching.
+User defined options were replaced by constant experssions ("magic constants").
+Code wasn't reformatted and unused stuff is randomly commented out.
+Stay away from reading source code, it can give you cancer.
+
 primus
 ======
-
 Primus is a shared library that provides OpenGL and GLX APIs and
 implements low-overhead
 local-only client-side OpenGL offloading via GLX forking, similar to
